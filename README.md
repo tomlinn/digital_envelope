@@ -1,5 +1,17 @@
 # digital_envelope
-<p>[Step01]-------------------Reciever------------------------------------------------------Sender------------------------</p>
+
+# Note
+* It's have to in the same network.
+* Ping your Reciever and Sender can check is in the same network or not, and also check the firewall block you or not.
+
+# Unsolve problem
+* It can't rebind the socket, which means you can bind socket, and send the message serval time (if you make reciever wait the message in the while loop).
+if you break the connection, you can also connect socket again,but it will not able to recieve message. Only work when the program exit the socket binding will truely break.(that's why my program will exit when every command finish)
+
+
+
+# Demo
+<p>[Step01]-------------------Reciever------------------------------------------------------Sender-----------------------</p>
 <img align="left" width="420" src="https://github.com/tomlinn/digital_envelope/blob/master/pic/01.png?raw=true">
 <img align="left" width="420" src="https://github.com/tomlinn/digital_envelope/blob/master/pic/02.png?raw=true">
 &nbsp
